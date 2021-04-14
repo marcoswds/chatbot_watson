@@ -1,0 +1,1332 @@
+{
+  "intents": [
+    {
+      "intent": "despedida",
+      "examples": [
+        {
+          "text": "Adeus"
+        },
+        {
+          "text": "Até depois"
+        },
+        {
+          "text": "Até logo"
+        },
+        {
+          "text": "Até mais"
+        },
+        {
+          "text": "Chau"
+        },
+        {
+          "text": "falou"
+        },
+        {
+          "text": "Tchau"
+        },
+        {
+          "text": "valeu"
+        }
+      ],
+      "description": "intenção que identifica a despedida do usuário"
+    },
+    {
+      "intent": "reservarChurrasqueira",
+      "examples": [
+        {
+          "text": "churrasco"
+        },
+        {
+          "text": "Churrasqueira"
+        },
+        {
+          "text": "pequena festa"
+        },
+        {
+          "text": "pequeno evento"
+        },
+        {
+          "text": "Reservar Churrasqueira"
+        }
+      ],
+      "description": "Intenção de reservar as áreas de pequenos eventos (até 30 pessoas) do clube"
+    },
+    {
+      "intent": "reservarEsporte",
+      "examples": [
+        {
+          "text": "agendar área de esportes"
+        },
+        {
+          "text": "agendar campo"
+        },
+        {
+          "text": "Agendar esportes"
+        },
+        {
+          "text": "agendar quadra"
+        },
+        {
+          "text": "reservar áreas esportivas"
+        },
+        {
+          "text": "reservar campo"
+        },
+        {
+          "text": "Reservar Esportes"
+        },
+        {
+          "text": "reservar quadra"
+        }
+      ],
+      "description": "Intenção de reservar as áreas de esporte do clube"
+    },
+    {
+      "intent": "reservarFesta",
+      "examples": [
+        {
+          "text": "Agendar Festa"
+        },
+        {
+          "text": "evento"
+        },
+        {
+          "text": "festa"
+        },
+        {
+          "text": "Reservar área de lazer"
+        },
+        {
+          "text": "reservar churrasqueira"
+        },
+        {
+          "text": "Reservar festa"
+        },
+        {
+          "text": "reservar lazer"
+        },
+        {
+          "text": "reservar salão"
+        }
+      ],
+      "description": "Intenção de reservar área de festas/lazer do clube"
+    },
+    {
+      "intent": "reservarFestaPrincipal",
+      "examples": [
+        {
+          "text": "Evento Grande"
+        },
+        {
+          "text": "Festa Grande"
+        },
+        {
+          "text": "Reservar festa principal"
+        },
+        {
+          "text": "Reservar Salão Principal"
+        },
+        {
+          "text": "Salão Principal"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "reservarFutebol",
+      "examples": [
+        {
+          "text": "Agendar Fut"
+        },
+        {
+          "text": "Agendar Futebol"
+        },
+        {
+          "text": "Agendar patota"
+        },
+        {
+          "text": "Reservar Fut"
+        },
+        {
+          "text": "Reservar Futebol"
+        },
+        {
+          "text": "Reservar uma pelada"
+        }
+      ],
+      "description": "Intenção de reservar campos ou quadras de futebol."
+    },
+    {
+      "intent": "reservarSalaoEventos",
+      "examples": [
+        {
+          "text": "festa média"
+        },
+        {
+          "text": "festa mediana"
+        },
+        {
+          "text": "Reservar evento médio"
+        },
+        {
+          "text": "Reservar Salão de Eventos"
+        },
+        {
+          "text": "Salão de Eventos"
+        }
+      ],
+      "description": "Intenção de reservar as áreas de eventos médios (31 a 100 pessoas) do clube"
+    },
+    {
+      "intent": "reservarTenis",
+      "examples": [
+        {
+          "text": "Agendar quadra de tênis"
+        },
+        {
+          "text": "Agendar Tênis"
+        },
+        {
+          "text": "Quadra de tênis"
+        },
+        {
+          "text": "Reservar quadra de tênis"
+        },
+        {
+          "text": "Reservar Tênis"
+        }
+      ],
+      "description": "Intenção de Reservar as quadras de Tênis"
+    },
+    {
+      "intent": "reservarVolei",
+      "examples": [
+        {
+          "text": "Agendar quadra de vôlei"
+        },
+        {
+          "text": "Agendar Vôlei"
+        },
+        {
+          "text": "Agendar Volleyball"
+        },
+        {
+          "text": "Reservar quadra de vôlei"
+        },
+        {
+          "text": "Reservar Vôlei"
+        },
+        {
+          "text": "Reservar Volleyball"
+        }
+      ],
+      "description": "Intenção para reservar uma quadra de vôlei"
+    },
+    {
+      "intent": "tornarSocio",
+      "examples": [
+        {
+          "text": "Associar-se"
+        },
+        {
+          "text": "Como ser sócio"
+        },
+        {
+          "text": "Ser membro"
+        },
+        {
+          "text": "Tornar-se Sócio"
+        },
+        {
+          "text": "Virar sócio"
+        }
+      ],
+      "description": "Intenção de tornar-se um sócio do clube"
+    }
+  ],
+  "entities": [
+    {
+      "entity": "campo_futebol_local",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "campo futebol frente",
+          "synonyms": [
+            "campo frente",
+            "frente"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "campo futebol fundos",
+          "synonyms": [
+            "campo fundos",
+            "fundos"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "campo_volei_local",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "campo areia vôlei",
+          "synonyms": [
+            "areia volei",
+            "campo areia volei"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "quadra vôlei",
+          "synonyms": [
+            "quadra volei"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "horario",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "08:00",
+          "synonyms": [
+            "8",
+            "8:00"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "09:00",
+          "synonyms": [
+            "9",
+            "9:00"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "10:00",
+          "synonyms": [
+            "10"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "11:00",
+          "synonyms": [
+            "11"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "13:00",
+          "synonyms": [
+            "13"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "14:00",
+          "synonyms": [
+            "14"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "15:00",
+          "synonyms": [
+            "15"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "16:00",
+          "synonyms": [
+            "16"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "17:00",
+          "synonyms": [
+            "17"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "18:00",
+          "synonyms": [
+            "18"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "19:00",
+          "synonyms": [
+            "19"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "20:00",
+          "synonyms": [
+            "20"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "21:00",
+          "synonyms": [
+            "21"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "quadra_tenis",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "piso duro",
+          "synonyms": [
+            "quadra de piso duro"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "saibro",
+          "synonyms": [
+            "quadra de saibro"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://api.openweathermap.org/data/2.5/onecall?lat=-26.9187&lon=-49.066&exclude=current,minutely,hourly,alerts&appid=40e14bda0f287714e5e6b3d26eff9972",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "title": "Olá, bem vindo! Sou Iza, sua assistente virtual do Clube Paraíso! Em que posso te ajudar hoje?",
+            "options": [
+              {
+                "label": "Reservar Áreas de Festa",
+                "value": {
+                  "input": {
+                    "text": "Reservar Áreas de Festa"
+                  }
+                }
+              },
+              {
+                "label": "Reservar Áreas Esportivas",
+                "value": {
+                  "input": {
+                    "text": "Reservar Áreas Esportivas"
+                  }
+                }
+              },
+              {
+                "label": "Tornar-se Sócio",
+                "value": {
+                  "input": {
+                    "text": "Tornar-se Sócio"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Você pode tentar reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_9_1617931292985",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_6_1618175752812",
+      "event_name": "input",
+      "dialog_node": "handler_10_1618175752827"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1618176402194",
+      "context": {
+        "horario": "@horario"
+      },
+      "conditions": "@horario",
+      "event_name": "input",
+      "dialog_node": "handler_10_1618176402213"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_7_1617938135577",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1618175752353",
+      "previous_sibling": "response_2_1618177466863"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Escolha um horário de amanhã para o agendamento. Funcionamos das 08:00 às 22:00, com pausa no almoço. O agendamento é feito na hora cheia, ou seja: 08:00 ou 09:00 etc.."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1618176402194",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1618176402213",
+      "previous_sibling": "handler_10_1618176402213"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1618180788643",
+      "event_name": "focus",
+      "dialog_node": "handler_3_1618180788655",
+      "previous_sibling": "handler_4_1618180788655"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1618175752812",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1618175752827",
+      "previous_sibling": "handler_10_1618175752827"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_9_1618180788643",
+      "event_name": "input",
+      "dialog_node": "handler_4_1618180788655"
+    },
+    {
+      "type": "standard",
+      "title": "registra_opcao_inicial",
+      "parent": "Bem-vindo",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#reservarEsporte || #reservarFesta || #tornarSocio",
+      "dialog_node": "node_10_1617932665984"
+    },
+    {
+      "type": "standard",
+      "title": "clima",
+      "parent": "node_1_1618176134106",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {},
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_10_1618274606698"
+    },
+    {
+      "type": "frame",
+      "title": "horario",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bom, seu agendamento foi confirmado para às $horario"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "@campo_volei_local || @quadra_tenis || @campo_futebol_local || #reservarChurrasqueira || #reservarFestaPrincipal || #reservarSalaoEventos",
+      "dialog_node": "node_1_1618176134106",
+      "previous_sibling": "node_2_1618179265633"
+    },
+    {
+      "type": "standard",
+      "title": "reservarTenis",
+      "output": {
+        "generic": [
+          {
+            "title": "Na reserva de tênis temos dois tipos de quadra: Saibro e se Piso Duro",
+            "options": [
+              {
+                "label": "Saibro",
+                "value": {
+                  "input": {
+                    "text": "saibro"
+                  }
+                }
+              },
+              {
+                "label": "Piso Duro",
+                "value": {
+                  "input": {
+                    "text": "piso duro"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1618176134106"
+      },
+      "conditions": "#reservarTenis",
+      "dialog_node": "node_2_1618179265633",
+      "previous_sibling": "node_9_1618177920778"
+    },
+    {
+      "type": "standard",
+      "title": "captura_telefone",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Muito bem, entreremos em contato através do contato $telefone_email assim que possível!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1618180612974",
+      "context": {
+        "telefone_email": "<?input.text?>"
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1618180771486"
+    },
+    {
+      "type": "standard",
+      "title": "reservarEsporte",
+      "output": {
+        "generic": [
+          {
+            "title": "Por gentileza, escolha qual esporte você deseja reservar:",
+            "options": [
+              {
+                "label": "Futebol",
+                "value": {
+                  "input": {
+                    "text": "Reservar Futebol"
+                  }
+                }
+              },
+              {
+                "label": "Vôlei",
+                "value": {
+                  "input": {
+                    "text": "Reservar Vôlei"
+                  }
+                }
+              },
+              {
+                "label": "Tênis",
+                "value": {
+                  "input": {
+                    "text": "Reservar Tênis"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#reservarEsporte",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1617936187943",
+      "previous_sibling": "node_4_1618180612974"
+    },
+    {
+      "type": "standard",
+      "title": "tornarSocio",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ficamos muito felizes que queiras se tornar sócio do clube Paraíso! Favor digitar abaixo seu e-mail ou telefone que entraremos em contato o mais rápido possível!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#tornarSocio",
+      "dialog_node": "node_4_1618180612974",
+      "previous_sibling": "node_8_1618181681498"
+    },
+    {
+      "type": "standard",
+      "parent": "node_8_1618181681498",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_6_1618182136883"
+    },
+    {
+      "type": "standard",
+      "title": "reservarFutebol",
+      "output": {
+        "generic": [
+          {
+            "title": "Na reserva de futebol, temos dois locais. o campo da entrada e o campo dos fundos, favor escolher um dos dois:",
+            "options": [
+              {
+                "label": "Campo de Gramado Frente",
+                "value": {
+                  "input": {
+                    "text": "campo frente"
+                  }
+                }
+              },
+              {
+                "label": "Campo de Gramado Fundos",
+                "value": {
+                  "input": {
+                    "text": "campo fundos"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1618176134106"
+      },
+      "conditions": "#reservarFutebol",
+      "dialog_node": "node_7_1617938135577",
+      "previous_sibling": "node_3_1617936187943"
+    },
+    {
+      "type": "standard",
+      "parent": "node_3_1617936187943",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_8_1617936848591"
+    },
+    {
+      "type": "standard",
+      "title": "reservarFesta",
+      "output": {
+        "generic": [
+          {
+            "title": "Hoje temos três tamanhos de áreas de festa à seu dispor, favor escolher a que se molda melhor a sua festa:",
+            "options": [
+              {
+                "label": "Churrasqueira (até 30 pessoas)",
+                "value": {
+                  "input": {
+                    "text": "Churrasqueira"
+                  }
+                }
+              },
+              {
+                "label": "Salão de Eventos (de 31 a 100 pessoas)",
+                "value": {
+                  "input": {
+                    "text": "Festa mediana"
+                  }
+                }
+              },
+              {
+                "label": "Salão Principal (Mais de 100 pessoas)",
+                "value": {
+                  "input": {
+                    "text": "Festa grande"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#reservarFesta",
+      "dialog_node": "node_8_1618181681498",
+      "previous_sibling": "Bem-vindo"
+    },
+    {
+      "type": "standard",
+      "title": "Despedida",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Estamos sempre à disposição!"
+              },
+              {
+                "text": "Até mais!"
+              },
+              {
+                "text": "Se precisar de ajuda, estamos sempre aqui! Até a próxima!"
+              },
+              {
+                "text": "Bom te ver por aqui! Até logo!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#despedida",
+      "dialog_node": "node_9_1617931292985",
+      "previous_sibling": "node_1_1618176134106"
+    },
+    {
+      "type": "standard",
+      "title": "reservarVolei",
+      "output": {
+        "generic": [
+          {
+            "title": "Na reserva de vôlei, pode-se escolher a quadra ou o campo de areia. Favor escolher um dos dois:",
+            "options": [
+              {
+                "label": "Quadra de Vôlei",
+                "value": {
+                  "input": {
+                    "text": "quadra vôlei"
+                  }
+                }
+              },
+              {
+                "label": "Campo de Areia de Vôlei",
+                "value": {
+                  "input": {
+                    "text": "campo areia vôlei"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1618176134106"
+      },
+      "conditions": "#reservarVolei",
+      "dialog_node": "node_9_1618177920778",
+      "previous_sibling": "node_7_1617938135577"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ótima escolha! Temos muitos benefícios para sócios."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1617932665984",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1618180612974"
+      },
+      "conditions": "#tornarSocio",
+      "dialog_node": "response_10_1617938088805",
+      "previous_sibling": "response_3_1617936526723"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dia lindo amanhã, céu nublado, aproveite seu dia!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1618274606698",
+      "conditions": "$webhook_result_1.daily[0].weather[0].main == 'Clear'",
+      "dialog_node": "response_10_1618275356935",
+      "previous_sibling": "response_5_1618275257435"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Um futebolzinho com os amigos seria uma boa né?"
+              },
+              {
+                "text": "Nada como um futebol com os amigos"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617936848591",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_7_1617938135577"
+      },
+      "conditions": "#reservarFutebol",
+      "dialog_node": "response_1_1617936879886"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Na reserva de futebol, temos dois locais. o campo da entrada e o campo dos fundos, favor escolher um dos dois:",
+            "options": [
+              {
+                "label": "Campo de Gramado Frente",
+                "value": {
+                  "input": {
+                    "text": "campo frente"
+                  }
+                }
+              },
+              {
+                "label": "Campo de Gramado Fundos",
+                "value": {
+                  "input": {
+                    "text": "campo fundos"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_7_1617938135577",
+      "disabled": true,
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1618176134106"
+      },
+      "conditions": "@campo_futebol_local",
+      "dialog_node": "response_2_1618177466863"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "É sempre bom fazer aquela reunião de amigos!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1618182136883",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1618176134106"
+      },
+      "conditions": "#reservarChurrasqueira",
+      "dialog_node": "response_2_1618182149805"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sempre é bom descontrair! Temos ótimas opções para seu evento."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1617932665984",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_8_1618181681498"
+      },
+      "conditions": "#reservarFesta",
+      "dialog_node": "response_3_1617936526723",
+      "previous_sibling": "response_6_1617932717574"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Se a sua intenção é dar uma grande festa e impressionar, sua escolha é a certa!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1618182136883",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1618176134106"
+      },
+      "conditions": "#reservarFestaPrincipal",
+      "dialog_node": "response_4_1618182772380",
+      "previous_sibling": "response_9_1618182764361"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Temos as melhores quadras de tênis da região, boa escolha!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617936848591",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1618179265633"
+      },
+      "conditions": "#reservarTenis",
+      "dialog_node": "response_5_1617938108524",
+      "previous_sibling": "response_7_1617938099030"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Melhor trazer o guarda-chuva, amanhã terá chuva!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1618274606698",
+      "conditions": "$webhook_result_1.daily[0].weather[0].main == 'Rain'",
+      "dialog_node": "response_5_1618274677954"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Amanhã estará um tempo gostoso para seu agendamento, dia nublado!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1618274606698",
+      "conditions": "$webhook_result_1.daily[0].weather[0].main == 'Clouds'",
+      "dialog_node": "response_5_1618275257435",
+      "previous_sibling": "response_5_1618274677954"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Vejo que você quer reservar áreas esportivas. Muito bom! Esportes são essenciais para uma vida saudável! "
+              },
+              {
+                "text": "Nós temos diversos ambientes para a prática de esportes. Excelente escolha!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_10_1617932665984",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_3_1617936187943"
+      },
+      "conditions": "#reservarEsporte",
+      "dialog_node": "response_6_1617932717574"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "O tempo tem sido ótimo para uma partida de vôlei!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1617936848591",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_9_1618177920778"
+      },
+      "conditions": "#reservarVolei",
+      "dialog_node": "response_7_1617938099030",
+      "previous_sibling": "response_1_1617936879886"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Na reserva de tênis temos dois tipos de quadra: Saibro e se Piso Duro",
+            "options": [
+              {
+                "label": "Saibro",
+                "value": {
+                  "input": {
+                    "text": "saibro"
+                  }
+                }
+              },
+              {
+                "label": "Piso Duro",
+                "value": {
+                  "input": {
+                    "text": "piso duro"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1618179265633",
+      "disabled": true,
+      "conditions": "$action_result_1",
+      "dialog_node": "response_8_1618184865284"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Temos os melhores espaços para sua festa!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1618182136883",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1618176134106"
+      },
+      "conditions": "#reservarSalaoEventos",
+      "dialog_node": "response_9_1618182764361",
+      "previous_sibling": "response_2_1618182149805"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1618179265633",
+      "disabled": true,
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1618184866460",
+      "previous_sibling": "response_8_1618184865284"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Aguardamos você aqui!"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1618274606698",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1618274625209",
+      "previous_sibling": "response_10_1618275356935"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_1_1618176134106",
+      "variable": "$horario",
+      "dialog_node": "slot_5_1618176402194",
+      "previous_sibling": "node_10_1618274606698"
+    },
+    {
+      "type": "slot",
+      "parent": "node_7_1617938135577",
+      "dialog_node": "slot_6_1618175752812",
+      "previous_sibling": "handler_1_1618175752353"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1618180771486",
+      "dialog_node": "slot_9_1618180788643"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Clube",
+  "language": "pt-br",
+  "description": ""
+}
